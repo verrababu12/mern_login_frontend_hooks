@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: #030d28;
   min-height: 100vh;
 }
@@ -29,7 +29,9 @@
   margin: 10px 0;
   color: #555;
 }
-
+.edit-container {
+  padding: 15px;
+}
 .user-details button {
   background-color: #007bff;
   color: white;

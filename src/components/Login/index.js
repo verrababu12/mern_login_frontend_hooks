@@ -35,7 +35,8 @@ const Login = () => {
     }));
   };
 
-  const onSubmitSuccess = () => {
+  const onSubmitSuccess = (token) => {
+    localStorage.setItem("token", token);
     history.push("/home");
   };
 
@@ -59,7 +60,7 @@ const Login = () => {
     const data = await response.json();
     console.log(data);
     if (response.ok) {
-      onSubmitSuccess();
+      onSubmitSuccess(data.token);
     } else {
       onSubmitFailure();
     }
