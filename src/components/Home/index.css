@@ -1,0 +1,59 @@
+/* Home Component Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #030d28;
+  min-height: 100vh;
+}
+
+.home-header {
+  font-family: "BreeSerif";
+  color: #b34f4f;
+}
+
+.user-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+  color: #333;
+}
+
+.user-details p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.user-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.user-details button:hover {
+  background-color: #0056b3;
+}
+.no-user {
+  color: #ffffff;
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  .user-details {
+    padding: 15px;
+  }
+}
